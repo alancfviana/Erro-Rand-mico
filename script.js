@@ -19,7 +19,9 @@ botao.addEventListener(`click`, async () => {
     
     if(imagem.src==''){
     }else{
-        root.removeChild(imagem)  
+        root.removeChild(imagem)
+        
+             
     }
     try {
         const resposta = await sorte()
@@ -29,6 +31,8 @@ botao.addEventListener(`click`, async () => {
     }
     finally{
         // console.log("FIm")
-        root.appendChild(imagem)
+        setTimeout(() => {            
+            root.appendChild(imagem)
+        }, 100);
     }
 })

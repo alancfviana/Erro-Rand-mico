@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 05</title>
+    <title>Teste Aleatório</title>
     <script src="./script.js" defer></script>
     <style>
-        img,button {
+        *{
+            background: blue;
+        }
+        img{
             display: block;
             margin: 0 auto;
             box-sizing: border-box;
@@ -17,13 +20,30 @@
             margin-bottom: 10px;
             padding: 10px;
             justify-content: center;
+            background: #fd06dc;
+        }
+        #botao {
+            display: block;
+            margin: 0 auto;
+            box-sizing: border-box;
+            min-width: 300px;
+            min-height: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            justify-content: center;
+            background: #d9d9d9;
+            color: #555;
+        }
+        #botao:hover{
+            background: #02f73f;
+            color: #ffffff;
         }
     </style>
 </head>
 
 <body>
     <div id="root" >
-        <button>Aperte e teste sua sorte!</button>
+        <button id="botao">Aperte e teste sua sorte!</button>
     </div>
 </body>
 </html>
